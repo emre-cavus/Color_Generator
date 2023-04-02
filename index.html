@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Color Generator</title>
+</head>
+<body>
+    <script src="script.js"></script>
+
+    <div class="container">
+        <span id="hsl" onclick="copyToClipboard();">
+        </span>
+
+        <span id="rgb" onclick="copyToClipboard();">
+        </span>
+
+        <span id="hex" onclick="copyToClipboard();">
+        </span>
+
+        <button id="btn" onclick="newColor()"> yeni renk </button>
+
+        <span class="sm"><input id="autoGenCB" type="checkbox" onclick="autoGenerate()"> her 3 saniyede bir otomatik </input>
+        </span>
+    </div>
+</body>
+</html>
+<!-- Referans alınan kaynak : https://codepen.io/pliu/pen/BLEKwr -->

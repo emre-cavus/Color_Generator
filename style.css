@@ -1,0 +1,71 @@
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+:root {
+    --bgColor: hsl(249, 100%, 75%);
+    --txtColor: hsl(0, 0%, 9%);
+    --btnColor: hsl(0, 100%, 98%);
+    --btnFocus: hsl(0, 100%, 95%);
+    --fonts: 'Montserrat', sans-serif;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--bgColor);
+    font-family: var(--fonts);
+    font-size: 1.75em;
+    transition: all 250ms;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 98vh;
+  }
+  
+  span {
+    color: var(--txtColor);
+    margin: 0.25em 0;
+    user-select: all;
+  }
+  
+  #hex {
+    text-transform: uppercase;
+  }
+  
+  button {
+    border-radius: 15px;
+    font-family: var(--fonts);
+    font-size: 1.15em;
+    margin: 0.5em;
+    padding: 0.5em 1em;
+    min-height: 80px;
+    width: 10em;
+    background: var(--btnColor);
+    color: var(--txtColor);
+    border: 0;
+    transition: 250ms;
+  }
+  button:hover{
+    color: var(--bgColor);
+  }
+  
+  button:active {
+    background: var(--btnFocus);
+  }
+  
+  button:focus {
+    outline: none;
+  }
+  
+  span.sm {
+    user-select: none;
+    font-size: 0.7em;
+    margin-top: -10px;
+  }
+  input{
+    cursor: pointer;
+    background-color: #484848;
+    border: none;
+  }
